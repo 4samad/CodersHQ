@@ -10,7 +10,6 @@ from codershq.portfolio.models import (
     Language,
     Portfolio,
     Task,
-    Experience,
 )
 
 
@@ -26,20 +25,6 @@ class PortfolioAdmin(admin.ModelAdmin):
 
     class Meta:
         verbose_name = _("codershq_model_portfolio")
-        verbose_name_plural = verbose_name
-
-@admin.register(Experience)
-class ExperienceAdmin(admin.ModelAdmin):
-    list_display = [
-        "user_profile",
-        "job_title",
-        "is_current",
-        "start_date",
-        "end_date",
-    ]
-
-    class Meta:
-        verbose_name = _("codershq_model_experience")
         verbose_name_plural = verbose_name
 
 

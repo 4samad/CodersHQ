@@ -1,7 +1,6 @@
 <div id="languages"
   class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2">
   <form action="#" method="POST">
-    {% csrf_token %}
     <div class="shadow overflow-hidden sm:rounded-md">
       <div class="px-4 py-5 bg-white sm:p-8">
         <h3 class="text-xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate mb-3">
@@ -14,17 +13,18 @@
           <div class="grid grid-cols-6 gap-6 p-4 my-6 bg-gray-50 rounded-lg">
 
             <div class="col-span-6 sm:col-span-3">
-              <label for="language_name" class="block text-sm font-medium text-gray-700">Language</label>
-              <input type="text" name="language_name" id="language_name" autocomplete="family-name"
+              <label for="language" class="block text-sm font-medium text-gray-700">Language</label>
+              <input type="text" name="language" id="language" autocomplete="family-name"
                 class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
             </div>
 
             <div class="col-span-6 sm:col-span-3">
-              <label for="language_proficiency" class="block text-sm font-medium text-gray-700">Proficiency</label>
-              <select id="language_proficiency" name="language_proficiency" autocomplete="Proficiency-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-                <option value="3">Advanced</option>
-                <option  value="2">Intermediate</option>
-                <option  value="1">Beginner</option>
+              <label for="Proficiency" class="block text-sm font-medium text-gray-700">Proficiency</label>
+              <select id="Proficiency" name="Proficiency" autocomplete="Proficiency-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                <option>Native or Bilingual</option>
+                <option>Professional</option>
+                <option>Intermediate</option>
+                <option>Beginner</option>
               </select>
             </div>
 

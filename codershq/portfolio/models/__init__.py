@@ -7,7 +7,6 @@ from .model_portfolio import (
     Language,
     Portfolio,
     Task,
-    Experience
 )
 from .model_project import Project
 from .model_service import Service
